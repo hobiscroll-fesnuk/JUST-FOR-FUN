@@ -20,14 +20,14 @@ def simulate_ddos_attack() -> Optional[str]:
             print("Error: URL harus dimulai dengan http:// atau https://")
             return None
             
-        print(f"\nMemulai simulasi DDoS ke {target_url}...\n")
+        print(f"\nMemulai serangan DDoS ke {target_url}...\n")
         
         # Simulation loop
         for attempt in range(1, 21):
             print(f"Request #{attempt}: Mengirim paket ke {target_url}")
             time.sleep(0.5)  # Simulate delay
             
-        return "Simulasi DDoS berhasil (20 requests dikirim)"
+        return "Serangan DDoS berhasil (20 requests dikirim)"
         
     except KeyboardInterrupt:
         print("\nOperasi dibatalkan oleh pengguna")
